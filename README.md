@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/e98f452c-dfe2-4bfe-b84f-b0b76f250b8a)
+![image](https://github.com/user-attachments/assets/a597f0c3-c98b-42d2-b33f-2f1f0b604427)
 
 -----------------
 FREE SCRIPT HERE!:
