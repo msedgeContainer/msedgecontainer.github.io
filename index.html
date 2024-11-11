@@ -30,11 +30,19 @@
             max-width: 800px;
         }
 
-        /* main title styling */
+        /* main title styling with image */
         .content h1 {
             font-size: 48px;
             font-weight: bold;
             margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .content h1 img {
+            margin-left: 15px; /* Add some space between the text and the image */
+            height: 50px; /* Set a specific size for the image */
         }
 
         /* button container styling */
@@ -91,8 +99,8 @@
 </head>
 <body>
     <div class="content">
-        <!-- main text -->
-        <h1>bad? start msedging now.</h1>
+        <!-- main text with image -->
+        <h1>bad? start msedging now. <img src="msedge.png" alt="Icon"></h1>
 
         <!-- buttons -->
         <div class="buttons">
