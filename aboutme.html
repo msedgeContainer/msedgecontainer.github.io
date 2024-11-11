@@ -68,19 +68,31 @@
             margin-top: 40px;
         }
 
-        .contact a {
+        .contact a, .youtube-button a {
             display: inline-block;
             padding: 12px 25px;
             font-size: 1.2em;
             color: white;
-            background-color: #7289DA;
             text-decoration: none;
             border-radius: 50px;
             transition: background-color 0.3s;
+            margin: 10px;
+        }
+
+        .contact a {
+            background-color: #7289DA;
         }
 
         .contact a:hover {
             background-color: #5b6e99;
+        }
+
+        .youtube-button a {
+            background-color: #FF0000; /* YouTube red */
+        }
+
+        .youtube-button a:hover {
+            background-color: #cc0000;
         }
 
         @media screen and (max-width: 768px) {
@@ -109,14 +121,20 @@
         <section class="about-me">
             <h2>hi, im Kacper and im polish</h2>
             <p>welcome to my about me webpage! im learning lua and im officially making a script but taking a break for gui and making functions.</p>
-            <p>whenever i stop coding, i play roblox or listen on spotify and watch some videos.</p>
+            <p>whenever i stop coding, i play roblox or listen to spotify and watch some videos.</p>
         </section>
 
         <!-- contact -->
         <section class="contact">
-            <h3>contact</h3></h3>
-            <p>contact me here and message noobergoober:</p>
-            <a href="https://discord.gg/nP4ZVx2mfB" target="_blank">contact</a>
+            <h3>contact</h3>
+            <p>contact me here and message noobergoober in the discord</p>
+            <a href="https://discord.gg/nP4ZVx2mfB" target="_blank">Contact</a>
+        </section>
+
+        <!-- YouTube button -->
+        <section class="youtube-button">
+            <p>check out my friends youtube channel:</p>
+            <a href="https://www.youtube.com/channel/UCXWR-pskLtwiiuPPm6AHmFQ" target="_blank">friends channel</a>
         </section>
     </div>
 
