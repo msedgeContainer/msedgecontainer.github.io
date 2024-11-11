@@ -3,8 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Discord - About Me</title>
+    <title>About Me</title>
     <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
             font-family: Arial, sans-serif;
             background-color: #1e1f22;
@@ -13,21 +20,24 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            margin: 0;
         }
         
+        /* Main Container */
         .container {
             width: 700px;
             background-color: #2f3136;
-            border-radius: 8px;
-            padding: 20px;
+            border-radius: 10px;
+            padding: 30px;
             text-align: center;
             color: #b9bbbe;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
         }
         
+        /* Title Section */
         .title {
-            font-size: 24px;
+            font-size: 26px;
             color: #ffffff;
+            font-weight: bold;
             margin-bottom: 8px;
         }
         
@@ -35,12 +45,15 @@
             font-size: 14px;
             color: #b9bbbe;
             margin-bottom: 20px;
+            line-height: 1.4;
         }
         
+        /* Button Section */
         .button-list {
             display: flex;
             flex-direction: column;
             gap: 12px;
+            margin-top: 20px;
         }
         
         .button {
@@ -48,55 +61,73 @@
             align-items: center;
             justify-content: space-between;
             background-color: #36393f;
-            border-radius: 4px;
-            padding: 12px;
+            border-radius: 5px;
+            padding: 15px;
             color: #ffffff;
             font-weight: bold;
             cursor: pointer;
+            transition: background-color 0.2s;
         }
-        
+
+        .button:hover {
+            background-color: #40444b;
+        }
+
         .button span {
             display: flex;
             align-items: center;
             gap: 10px;
         }
-        
+
+        /* Icon Styling */
         .button i {
             background-color: #5865f2;
-            width: 20px;
-            height: 20px;
+            width: 25px;
+            height: 25px;
             border-radius: 50%;
             display: inline-block;
         }
         
+        /* Completed Button Styling */
         .button.completed {
             color: #43b581;
         }
         
+        /* Checkmark Styling */
+        .button.completed span:last-child {
+            font-size: 18px;
+        }
+
+        /* Footer Section */
         .footer {
             margin-top: 40px;
             text-align: left;
+            background-color: #36393f;
+            border-radius: 5px;
+            padding: 15px;
         }
         
-        .footer .username {
+        .username {
             font-weight: bold;
             color: #ffffff;
             margin-bottom: 8px;
+            font-size: 16px;
         }
         
-        .footer .message {
+        .message {
             color: #b9bbbe;
             font-size: 14px;
+            line-height: 1.6;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- title section -->
+        <!-- Title Section -->
         <div class="title">Welcome to About Me</div>
-        <div class="subtitle">This is your brand new, shiny server. Here are some steps to help you get started. for more, check out our getting started guide.</div>
+        <div class="subtitle">This is your brand new, shiny server. Here are some steps to help you get started. For more, check out our Getting Started guide.</div>
         
-        <!-- button section -->
+        <!-- Button Section -->
         <div class="button-list">
             <div class="button">
                 <span><i></i> Invite your friends</span>
@@ -114,12 +145,12 @@
             </div>
         </div>
         
-        <!-- footer section -->
+        <!-- Footer Section -->
         <div class="footer">
-            <div class="username">noobergoober</div>
+            <div class="username">NooberGoober</div>
             <div class="message">
-                hi, im kacper and im polish<br>
-                welcome to my about me webpage! im learning lua and im officially making a script but taking a break for gui and making functions.<br>
+                hi, im Kacper and im polish.<br>
+                welcome to my about me webpage! im learning lua and im officially making a script but taking a break for gui and making functions.
                 whenever i stop coding, i play roblox or listen to spotify and watch some videos.
             </div>
         </div>
