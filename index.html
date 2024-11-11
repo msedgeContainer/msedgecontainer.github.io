@@ -5,14 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>msedge</title>
     <style>
-        /* basic reset */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
-        /* fullscreen background */
         body {
             display: flex;
             align-items: center;
@@ -24,28 +22,22 @@
             color: white;
         }
 
-        /* container for content */
         .content {
             text-align: center;
             max-width: 800px;
         }
 
-        /* main title styling with image */
+        .content img {
+            max-width: 100px;
+            margin-bottom: 20px;
+        }
+
         .content h1 {
             font-size: 48px;
             font-weight: bold;
             margin-bottom: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
         }
 
-        .content h1 img {
-            margin-left: 15px; /* Add some space between the text and the image */
-            height: 50px; /* Set a specific size for the image */
-        }
-
-        /* button container styling */
         .buttons {
             display: flex;
             justify-content: center;
@@ -53,7 +45,6 @@
             margin-top: 20px;
         }
 
-        /* button styling */
         .button {
             padding: 10px 20px;
             font-size: 16px;
@@ -70,14 +61,12 @@
             background-color: #0f59b3;
         }
 
-        /* footer box */
         .footer {
             display: flex;
             justify-content: space-around;
             margin-top: 40px;
         }
 
-        /* footer item */
         .footer-item {
             background-color: rgba(0, 0, 0, 0.7);
             padding: 20px;
@@ -99,8 +88,11 @@
 </head>
 <body>
     <div class="content">
-        <!-- main text with image -->
-        <h1>bad? start msedging now. <img src="msedge.png" alt="Icon"></h1>
+        <!-- image above title -->
+        <img src="assets/msedge.png" alt="title image">
+
+        <!-- main text -->
+        <h1>bad? start msedging now.</h1>
 
         <!-- buttons -->
         <div class="buttons">
@@ -108,18 +100,18 @@
             <a href="https://msedgecontainer.github.io/aboutme.html" target="_blank" class="button">learn more ›</a>
         </div>
 
-        <!-- epic footer -->
+        <!-- footer -->
         <div class="footer">
             <div class="footer-item">
-                <h3>Undetectable</h3>
+                <h3>undetectable</h3>
                 <p>its not cheating if you dont get caught.</p>
             </div>
             <div class="footer-item">
-                <h3>What to Do</h3>
+                <h3>what to do</h3>
                 <p>to get some slaps buddy.</p>
             </div>
             <div class="footer-item">
-                <h3>About Me</h3>
+                <h3>about me</h3>
                 <p>i am a bad scripter. (obv)</p>
             </div>
         </div>
