@@ -3,140 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>hi</title>
+    <title>Discord - About Me</title>
     <style>
-        /* general reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #2C2F38;
-            color: #FFFFFF;
-            line-height: 1.6;
-            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #1e1f22;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
             margin: 0;
         }
-
-        header {
-            background-color: #5865F2;
-            color: white;
-            text-align: center;
-            padding: 50px 0;
-            font-size: 3em;
-            text-transform: uppercase;
-            border-bottom: 3px solid #4f52e0;
-        }
-
+        
         .container {
-            width: 80%;
-            max-width: 1200px;
-            margin: 30px auto;
-        }
-
-        .about-me {
-            background-color: #333842;
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+            width: 700px;
+            background-color: #2f3136;
+            border-radius: 8px;
+            padding: 20px;
             text-align: center;
+            color: #b9bbbe;
         }
-
-        .about-me h2 {
-            font-size: 2.5em;
-            color: #5865F2;
-            margin-bottom: 15px;
+        
+        .title {
+            font-size: 24px;
+            color: #ffffff;
+            margin-bottom: 8px;
         }
-
-        .about-me p {
-            font-size: 1.1em;
-            color: #B9BBBE;
+        
+        .subtitle {
+            font-size: 14px;
+            color: #b9bbbe;
             margin-bottom: 20px;
         }
-
-        .highlight {
-            color: #5865F2;
+        
+        .button-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        
+        .button {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #36393f;
+            border-radius: 4px;
+            padding: 12px;
+            color: #ffffff;
             font-weight: bold;
+            cursor: pointer;
         }
-
-        .contact {
-            text-align: center;
-            margin-top: 40px;
+        
+        .button span {
+            display: flex;
+            align-items: center;
+            gap: 10px;
         }
-
-        .contact a, .youtube-button a {
+        
+        .button i {
+            background-color: #5865f2;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
             display: inline-block;
-            padding: 12px 25px;
-            font-size: 1.2em;
-            color: white;
-            text-decoration: none;
-            border-radius: 50px;
-            transition: background-color 0.3s;
-            margin: 10px;
         }
-
-        .contact a {
-            background-color: #7289DA;
+        
+        .button.completed {
+            color: #43b581;
         }
-
-        .contact a:hover {
-            background-color: #5b6e99;
+        
+        .footer {
+            margin-top: 40px;
+            text-align: left;
         }
-
-        .youtube-button a {
-            background-color: #FF0000; /* YouTube red */
+        
+        .footer .username {
+            font-weight: bold;
+            color: #ffffff;
+            margin-bottom: 8px;
         }
-
-        .youtube-button a:hover {
-            background-color: #cc0000;
-        }
-
-        @media screen and (max-width: 768px) {
-            .about-me {
-                padding: 20px;
-            }
-
-            .about-me h2 {
-                font-size: 2em;
-            }
-
-            .about-me p {
-                font-size: 1em;
-            }
+        
+        .footer .message {
+            color: #b9bbbe;
+            font-size: 14px;
         }
     </style>
 </head>
 <body>
-
-    <header>
-        About Me
-    </header>
-
     <div class="container">
-        <!-- about me -->
-        <section class="about-me">
-            <h2>hi, im Kacper and im polish</h2>
-            <p>welcome to my about me webpage! im learning lua and im officially making a script but taking a break for gui and making functions.</p>
-            <p>whenever i stop coding, i play roblox or listen to spotify and watch some videos.</p>
-        </section>
-
-        <!-- contact -->
-        <section class="contact">
-            <h3>contact</h3>
-            <p>contact me here and message noobergoober in the discord</p>
-            <a href="https://discord.gg/nP4ZVx2mfB" target="_blank">Contact</a>
-        </section>
-
-        <!-- YouTube button -->
-        <section class="youtube-button">
-            <p>check out my friends youtube channel:</p>
-            <a href="https://www.youtube.com/channel/UCXWR-pskLtwiiuPPm6AHmFQ" target="_blank">friends channel</a>
-        </section>
+        <!-- title section -->
+        <div class="title">Welcome to About Me</div>
+        <div class="subtitle">This is your brand new, shiny server. Here are some steps to help you get started. for more, check out our getting started guide.</div>
+        
+        <!-- button section -->
+        <div class="button-list">
+            <div class="button">
+                <span><i></i> Invite your friends</span>
+            </div>
+            <div class="button completed">
+                <span><i></i> Personalize your server with an icon</span>
+                <span>✓</span>
+            </div>
+            <div class="button completed">
+                <span><i></i> Send your first message</span>
+                <span>✓</span>
+            </div>
+            <div class="button">
+                <span><i></i> Add your first app</span>
+            </div>
+        </div>
+        
+        <!-- footer section -->
+        <div class="footer">
+            <div class="username">noobergoober</div>
+            <div class="message">
+                hi, im kacper and im polish<br>
+                welcome to my about me webpage! im learning lua and im officially making a script but taking a break for gui and making functions.<br>
+                whenever i stop coding, i play roblox or listen to spotify and watch some videos.
+            </div>
+        </div>
     </div>
-
 </body>
 </html>
