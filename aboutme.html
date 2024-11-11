@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
+    <title>Subscribe Button</title>
     <style>
         /* Basic Reset */
         * {
@@ -14,146 +14,55 @@
 
         body {
             font-family: Arial, sans-serif;
-            background-color: #1e1f22;
-            color: #ffffff;
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: 100vh;
+            height: 100vh;
+            background-color: #121212;
+            color: #ffffff;
         }
-        
-        /* Main Container */
+
+        /* Container for image and button */
         .container {
-            width: 700px;
-            background-color: #2f3136;
-            border-radius: 10px;
-            padding: 30px;
             text-align: center;
-            color: #b9bbbe;
-            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
         }
-        
-        /* Title Section */
-        .title {
-            font-size: 26px;
-            color: #ffffff;
-            font-weight: bold;
-            margin-bottom: 8px;
+
+        /* Image Styling */
+        .container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
         }
-        
-        .subtitle {
-            font-size: 14px;
-            color: #b9bbbe;
-            margin-bottom: 20px;
-            line-height: 1.4;
-        }
-        
-        /* Button Section */
-        .button-list {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-            margin-top: 20px;
-        }
-        
+
+        /* Button Styling */
         .button {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            background-color: #36393f;
-            border-radius: 5px;
-            padding: 15px;
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            font-size: 18px;
             color: #ffffff;
-            font-weight: bold;
+            text-decoration: none;
+            background-color: transparent;
+            border: 2px solid transparent;
             cursor: pointer;
-            transition: background-color 0.2s;
+            transition: background-color 0.3s, border-color 0.3s;
         }
 
         .button:hover {
-            background-color: #40444b;
-        }
-
-        .button span {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        /* Icon Styling */
-        .button i {
-            background-color: #5865f2;
-            width: 25px;
-            height: 25px;
-            border-radius: 50%;
-            display: inline-block;
-        }
-        
-        /* Completed Button Styling */
-        .button.completed {
-            color: #43b581;
-        }
-        
-        /* Checkmark Styling */
-        .button.completed span:last-child {
-            font-size: 18px;
-        }
-
-        /* Footer Section */
-        .footer {
-            margin-top: 40px;
-            text-align: left;
-            background-color: #36393f;
-            border-radius: 5px;
-            padding: 15px;
-        }
-        
-        .username {
-            font-weight: bold;
-            color: #ffffff;
-            margin-bottom: 8px;
-            font-size: 16px;
-        }
-        
-        .message {
-            color: #b9bbbe;
-            font-size: 14px;
-            line-height: 1.6;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-color: #ff0000; /* Red border for hover effect */
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- Title Section -->
-        <div class="title">Welcome to About Me</div>
-        <div class="subtitle">This is your brand new, shiny server. Here are some steps to help you get started. For more, check out our Getting Started guide.</div>
-        
-        <!-- Button Section -->
-        <div class="button-list">
-            <div class="button">
-                <span><i></i> Invite your friends</span>
-            </div>
-            <div class="button completed">
-                <span><i></i> Personalize your server with an icon</span>
-                <span>✓</span>
-            </div>
-            <div class="button completed">
-                <span><i></i> Send your first message</span>
-                <span>✓</span>
-            </div>
-            <div class="button">
-                <span><i></i> Add your first app</span>
-            </div>
-        </div>
-        
-        <!-- Footer Section -->
-        <div class="footer">
-            <div class="username">NooberGoober</div>
-            <div class="message">
-                hi, im Kacper and im polish.<br>
-                welcome to my about me webpage! im learning lua and im officially making a script but taking a break for gui and making functions.
-                whenever i stop coding, i play roblox or listen to spotify and watch some videos.
-            </div>
-        </div>
+        <!-- Image -->
+        <img src="imager.png" alt="" width="500" height="auto">
+
+        <!-- Button -->
+        <a href="https://www.youtube.com/channel/UCXWR-pskLtwiiuPPm6AHmFQ" target="_blank" class="button">
+            subscribe to my friend here!
+        </a>
     </div>
 </body>
 </html>
