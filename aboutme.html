@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Subscribe Button</title>
+    <title>lol</title>
     <style>
         /* Basic Reset */
         * {
@@ -12,57 +12,54 @@
             box-sizing: border-box;
         }
 
-        body {
-            font-family: Arial, sans-serif;
+        /* Fullscreen Image Background */
+        body, html {
+            width: 100%;
+            height: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            background-color: #121212;
-            color: #ffffff;
-        }
-
-        /* Container for image and button */
-        .container {
-            text-align: center;
+            overflow: hidden;
         }
 
         /* Image Styling */
-        .container img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
+        .background-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('imager.png'); /* Replace with your image */
+            background-size: cover;
+            background-position: center;
+            z-index: -1;
         }
 
         /* Button Styling */
         .button {
             display: inline-block;
-            margin-top: 15px;
-            padding: 10px 20px;
-            font-size: 18px;
+            padding: 15px 25px;
+            font-size: 24px;
             color: #ffffff;
             text-decoration: none;
-            background-color: transparent;
-            border: 2px solid transparent;
-            cursor: pointer;
-            transition: background-color 0.3s, border-color 0.3s;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background-color 0.3s;
         }
 
         .button:hover {
-            background-color: rgba(255, 255, 255, 0.1);
-            border-color: #ff0000; /* Red border for hover effect */
+            background-color: rgba(255, 0, 0, 0.7); /* Red tint on hover */
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <!-- Image -->
-        <img src="imager.png" alt="" width="500" height="auto">
+    <!-- Fullscreen Background Image -->
+    <div class="background-image"></div>
 
-        <!-- Button -->
-        <a href="https://www.youtube.com/channel/UCXWR-pskLtwiiuPPm6AHmFQ" target="_blank" class="button">
-            subscribe to my friend here!
-        </a>
-    </div>
+    <!-- Button Overlay -->
+    <a href="https://www.youtube.com/channel/UCXWR-pskLtwiiuPPm6AHmFQ" target="_blank" class="button">
+        subscribe to my friend here!
+    </a>
 </body>
 </html>
