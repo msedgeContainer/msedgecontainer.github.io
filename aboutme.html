@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
+    <title>about me</title>
     <style>
         /* reset styles */
         * {
@@ -12,27 +12,30 @@
             box-sizing: border-box;
         }
 
-        /* body styling */
+        /* body styling with dark background */
         body {
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
             font-family: 'Georgia', serif;
-            background-color: #f2f2f5;
-            color: #333;
+            background-color: #1e1e1e; /* dark gray/black background */
+            color: #e0e0e0;
+            overflow: hidden;
             padding: 20px;
         }
 
         /* main container styling */
         .container {
+            position: relative;
             max-width: 600px;
-            background: #ffffff;
+            background: rgba(255, 255, 255, 0.1); /* slightly transparent container */
             padding: 40px;
             border-radius: 12px;
-            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
             text-align: center;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            backdrop-filter: blur(8px);
+            z-index: 1;
         }
 
         .container:hover {
@@ -43,15 +46,14 @@
         /* header styles */
         h1 {
             font-size: 32px;
-            color: #4a4a6a;
+            color: #d9d9d9;
             font-weight: bold;
             margin-bottom: 12px;
-            letter-spacing: 0.5px;
         }
 
         h2 {
             font-size: 18px;
-            color: #6a6a8d;
+            color: #b3b3b3;
             font-weight: 400;
             margin-bottom: 25px;
             font-style: italic;
@@ -61,18 +63,18 @@
         .about-text {
             font-size: 16px;
             line-height: 1.7;
-            color: #555;
+            color: #cccccc;
             margin-bottom: 30px;
             padding: 0 20px;
         }
 
-        /* button styling */
+        /* button styling with aqua background */
         .contact-button {
             display: inline-block;
             padding: 12px 28px;
             font-size: 15px;
             color: #ffffff;
-            background-color: #3bc7c7; /* main aqua function */
+            background-color: #3bc7c7; /* aqua color */
             border-radius: 25px;
             text-decoration: none;
             font-weight: 600;
@@ -81,29 +83,52 @@
         }
 
         .contact-button:hover {
-            background-color: #34b0b0; /* darker aqua if u hover */
+            background-color: #34b0b0; /* darker aqua on hover */
             box-shadow: 0 4px 12px rgba(59, 199, 199, 0.4);
         }
 
         /* footer styling */
         footer {
             font-size: 14px;
-            color: #aaa;
+            color: #888;
             margin-top: 20px;
             text-align: center;
+        }
+
+        /* floating x styling */
+        .floating-x {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            opacity: 0.8; /* 0.8 transparency */
+            z-index: 0;
+            animation: floatX 12s linear infinite;
+        }
+
+        /* keyframes for moving the x around */
+        @keyframes floatX {
+            0% { top: 10%; left: 10%; }
+            25% { top: 20%; left: 85%; }
+            50% { top: 75%; left: 55%; }
+            75% { top: 50%; left: 25%; }
+            100% { top: 10%; left: 10%; }
         }
     </style>
 </head>
 <body>
+    <!-- floating x image -->
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Red_X.svg/768px-Red_X.svg.png" alt="floating x" class="floating-x">
+
+    <!-- main container for content -->
     <div class="container">
         <!-- main -->
-        <h1>hi, im kacper</h1>
+        <h1>hi, i'm kacper</h1>
         <h2>lua/html coder</h2>
         <p class="about-text">
-            i am more styled as a exploiter, i have learned lua 1 month ago and html just yesterday. i learned lua from my project that ur reading rn and my main website https://msedgecontainer.github.io/ i have made it with html and this about me with html too (you can tell it from the link)
+            i am more styled as an exploiter, i learned lua one month ago and html just yesterday. i learned lua from my project that you're reading right now, and my main website <a href="https://msedgecontainer.github.io/" target="_blank" style="color: #3bc7c7; text-decoration: none;">msedgecontainer.github.io</a> was made with html. this about me section is also written in html.
         </p>
 
-        <!-- functions for contact button -->
+        <!-- contact button -->
         <a href="https://discord.gg/nP4ZVx2mfB" class="contact-button" target="_blank">contact me</a>
     </div>
 
