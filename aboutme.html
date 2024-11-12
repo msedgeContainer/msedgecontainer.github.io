@@ -3,63 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>lol</title>
+    <title>About Me</title>
     <style>
-        /* Basic Reset */
+        /* reset styles */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
-        /* Fullscreen Image Background */
-        body, html {
-            width: 100%;
-            height: 100%;
+        /* body styling */
+        body {
             display: flex;
             justify-content: center;
             align-items: center;
-            overflow: hidden;
+            min-height: 100vh;
+            font-family: 'Georgia', serif;
+            background-color: #f2f2f5;
+            color: #333;
+            padding: 20px;
         }
 
-        /* Image Styling */
-        .background-image {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image: url('imager.png'); /* Replace with your image */
-            background-size: cover;
-            background-position: center;
-            z-index: -1;
+        /* main container styling */
+        .container {
+            max-width: 600px;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
-        /* Button Styling */
-        .button {
-            display: inline-block;
-            padding: 15px 25px;
-            font-size: 24px;
-            color: #ffffff;
-            text-decoration: none;
-            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-            border-radius: 8px;
+        .container:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+        }
+
+        /* header styles */
+        h1 {
+            font-size: 32px;
+            color: #4a4a6a;
             font-weight: bold;
-            transition: background-color 0.3s;
+            margin-bottom: 12px;
+            letter-spacing: 0.5px;
         }
 
-        .button:hover {
-            background-color: rgba(255, 0, 0, 0.7); /* Red tint on hover */
+        h2 {
+            font-size: 18px;
+            color: #6a6a8d;
+            font-weight: 400;
+            margin-bottom: 25px;
+            font-style: italic;
+        }
+
+        /* about text styling */
+        .about-text {
+            font-size: 16px;
+            line-height: 1.7;
+            color: #555;
+            margin-bottom: 30px;
+            padding: 0 20px;
+        }
+
+        /* button styling */
+        .contact-button {
+            display: inline-block;
+            padding: 12px 28px;
+            font-size: 15px;
+            color: #ffffff;
+            background-color: #3bc7c7; /* main aqua function */
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .contact-button:hover {
+            background-color: #34b0b0; /* darker aqua if u hover */
+            box-shadow: 0 4px 12px rgba(59, 199, 199, 0.4);
+        }
+
+        /* footer styling */
+        footer {
+            font-size: 14px;
+            color: #aaa;
+            margin-top: 20px;
+            text-align: center;
         }
     </style>
 </head>
 <body>
-    <!-- Fullscreen Background Image -->
-    <div class="background-image"></div>
+    <div class="container">
+        <!-- main -->
+        <h1>hi, im kacper</h1>
+        <h2>lua/html coder</h2>
+        <p class="about-text">
+            i am more styled as a exploiter, i have learned lua 1 month ago and html just yesterday. i learned lua from my project that ur reading rn and my main website https://msedgecontainer.github.io/ i have made it with html and this about me with html too (you can tell it from the link)
+        </p>
 
-    <!-- Button Overlay -->
-    <a href="https://www.youtube.com/channel/UCXWR-pskLtwiiuPPm6AHmFQ" target="_blank" class="button">
-        subscribe to my friend here!
-    </a>
+        <!-- functions for contact button -->
+        <a href="https://discord.gg/nP4ZVx2mfB" class="contact-button" target="_blank">contact me</a>
+    </div>
+
+    <footer>made with a lot of msedging</footer>
 </body>
 </html>
