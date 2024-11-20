@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>msedge exec</title>
+    <title>msedge executor</title>
     <style>
         body {
             margin: 0;
@@ -16,7 +16,9 @@
             font-family: Arial, sans-serif;
             color: white;
             text-align: center;
-            animation: backgroundMove 2s linear infinite;
+            background: linear-gradient(45deg, aqua, black);
+            background-size: 400% 400%;
+            animation: gradientMove 10s ease infinite;
         }
 
         h1 {
@@ -24,15 +26,15 @@
             text-shadow: 0 0 10px black, 0 0 20px aqua;
         }
 
-        @keyframes backgroundMove {
+        @keyframes gradientMove {
             0% {
-                background: aqua;
+                background-position: 0% 50%;
             }
             50% {
-                background: black;
+                background-position: 100% 50%;
             }
             100% {
-                background: aqua;
+                background-position: 0% 50%;
             }
         }
     </style>
@@ -44,6 +46,6 @@
     </script>
 </head>
 <body>
-    <h1>ready to start msedging?<br>get ready in 5 seconds to edge.</h1>
+    <h1>ready to start msedging?<br>get ready in 5 seconds to start edging.</h1>
 </body>
 </html>
