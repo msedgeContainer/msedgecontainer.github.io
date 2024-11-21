@@ -3,135 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>about me</title>
     <style>
-        /* reset styles */
+        /* general */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-
-        /* body styling with dark background */
         body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            font-family: 'Georgia', serif;
-            background-color: #1e1e1e; /* dark gray/black background */
-            color: #e0e0e0;
-            overflow: hidden;
-            padding: 20px;
+            font-family: 'Roboto', sans-serif;
+            background-color: #2C2F38;
+            color: #FFFFFF;
+            line-height: 1.6;
+            padding: 0;
+            margin: 0;
         }
-
-        /* main container styling */
+        header {
+            background-color: #5865F2;
+            color: white;
+            text-align: center;
+            padding: 50px 0;
+            font-size: 3em;
+            text-transform: uppercase;
+            border-bottom: 3px solid #4f52e0;
+        }
         .container {
-            position: relative;
-            max-width: 600px;
-            background: rgba(255, 255, 255, 0.1); /* slightly transparent container */
+            width: 80%;
+            max-width: 1200px;
+            margin: 30px auto;
+        }
+        .about-me {
+            background-color: #333842;
             padding: 40px;
             border-radius: 12px;
-            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
             text-align: center;
-            backdrop-filter: blur(8px);
-            z-index: 1;
         }
-
-        .container:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+        .about-me h2 {
+            font-size: 2.5em;
+            color: #5865F2;
+            margin-bottom: 15px;
         }
-
-        /* header styles */
-        h1 {
-            font-size: 32px;
-            color: #d9d9d9;
+        .about-me p {
+            font-size: 1.1em;
+            color: #B9BBBE;
+            margin-bottom: 20px;
+        }
+        .highlight {
+            color: #5865F2;
             font-weight: bold;
-            margin-bottom: 12px;
         }
-
-        h2 {
-            font-size: 18px;
-            color: #b3b3b3;
-            font-weight: 400;
-            margin-bottom: 25px;
-            font-style: italic;
-        }
-
-        /* about text styling */
-        .about-text {
-            font-size: 16px;
-            line-height: 1.7;
-            color: #cccccc;
-            margin-bottom: 30px;
-            padding: 0 20px;
-        }
-
-        /* button styling with aqua background */
-        .contact-button {
-            display: inline-block;
-            padding: 12px 28px;
-            font-size: 15px;
-            color: #ffffff;
-            background-color: #3bc7c7; /* aqua color */
-            border-radius: 25px;
-            text-decoration: none;
-            font-weight: 600;
-            letter-spacing: 0.5px;
-            transition: background-color 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .contact-button:hover {
-            background-color: #34b0b0; /* darker aqua on hover */
-            box-shadow: 0 4px 12px rgba(59, 199, 199, 0.4);
-        }
-
-        /* footer styling */
-        footer {
-            font-size: 14px;
-            color: #888;
-            margin-top: 20px;
+        .contact {
             text-align: center;
+            margin-top: 40px;
         }
-
-        /* floating X styling */
-        .floating-x {
-            position: absolute;
-            font-size: 60px;
-            color: red;
-            opacity: 0.8;
-            z-index: 0;
-            animation: floatX 12s linear infinite;
+        .contact a {
+            display: inline-block;
+            padding: 12px 25px;
+            font-size: 1.2em;
+            color: white;
+            background-color: #7289DA;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: background-color 0.3s;
         }
-
-        /* keyframes for moving the X around */
-        @keyframes floatX {
-            0% { top: 10%; left: 10%; }
-            25% { top: 20%; left: 85%; }
-            50% { top: 75%; left: 55%; }
-            75% { top: 50%; left: 25%; }
-            100% { top: 10%; left: 10%; }
+        .contact a:hover {
+            background-color: #5b6e99;
+        }
+        @media screen and (max-width: 768px) {
+            .about-me {
+                padding: 20px;
+            }
+            .about-me h2 {
+                font-size: 2em;
+            }
+            .about-me p {
+                font-size: 1em;
+            }
         }
     </style>
 </head>
 <body>
-    <!-- floating X as styled text -->
-    <div class="floating-x">X</div>
-
-    <!-- main container for content -->
+    <header>
+        About Me
+    </header>
     <div class="container">
-        <!-- main -->
-        <h1>hi, i'm kacper</h1>
-        <h2>lua/html coder</h2>
-        <p class="about-text">
-            i am more styled as an exploiter, i learned lua one month ago and html just yesterday. i learned lua from my project that you're reading right now, and my main website <a href="https://msedgecontainer.github.io/" target="_blank" style="color: #3bc7c7; text-decoration: none;">msedgecontainer.github.io</a> was made with html. this about me section is also written in html.
-        </p>
-
-        <!-- contact button -->
-        <a href="https://discord.gg/nP4ZVx2mfB" class="contact-button" target="_blank">contact me</a>
+        <!-- about me -->
+        <section class="about-me">
+            <h2>hi, im Kacper and im polish</h2>
+            <p>welcome to my about me webpage! im learning lua and im officially making a script but taking a break for gui and making functions.</p>
+            <p>whenever i stop coding, i play roblox or listen on spotify and watch some videos.</p>
+        </section>
+        <!-- contact -->
+        <section class="contact">
+            <h3>contact</h3></h3>
+            <p>contact me here and message noobergoober:</p>
+            <a href="https://discord.gg/nP4ZVx2mfB" target="_blank">contact</a>
+        </section>
     </div>
-
-    <footer>made with a lot of msedging</footer>
 </body>
 </html>
