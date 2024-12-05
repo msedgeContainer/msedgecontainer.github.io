@@ -120,7 +120,7 @@
 <body>
     <h1>bad? start snow msedging now.</h1>
 
-    <button class="button">get script</button>
+    <button class="button" onclick="redirect()">get script</button>
 
     <div class="boxes">
         <div class="box">
@@ -155,6 +155,10 @@
             setTimeout(() => {
                 snowflake.remove();
             }, 5000);
+        }
+
+        function redirect() {
+            window.location.href = "https://discord.gg/nP4ZVx2mfB";
         }
 
         setInterval(createSnowflake, 200);
